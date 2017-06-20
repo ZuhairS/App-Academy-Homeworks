@@ -77,8 +77,42 @@
     </ol>
   </section>
 
+  <section>
+    <h2>Reviews</h2>
+    <form action="/reviews" method="post">
+      <label for="reviewer name">Name of Reviewer: </label>
+      <input id="reviewer name" type="text">
+
+      <label for="rating">Ratings:</label>
+      1<input id="rating" value="1" type="radio" checked>
+      2<input id="rating" value="2" type="radio">
+      3<input id="rating" value="3" type="radio">
+      4<input id="rating" value="4" type="radio">
+      5<input id="rating" value="5" type="radio">
+
+      <br><br>
+
+      <label for="cooking expertise">Cooking Expertise: </label>
+      <select id="cooking expertise" name="cooking expertise">
+        <option disabled selected value="Select Cooking Expertise">--Select Cooking Expertise--</option>
+        <option value="Sometimes Cook">Sometimes Cook</option>
+        <option value="Cook Everyday">Cook Everyday</option>
+        <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+        <option value="Professional Chef">Professional Chef</option>
+      </select>
+
+      <br><br>
+
+      <label>Review: <textarea name="review" cols="50"></textarea></label>
+
+      <br><br>
+
+      <input type="submit" value="Submit Review">
+    </form>
+  </section>
+
   <footer>
-    <p>Original recipe by <a href="http://www.mapsofindia.com/my-india/food/rasmalai">Neha</a></p>
+    <h6>Original recipe by <a href="http://www.mapsofindia.com/my-india/food/rasmalai">Neha</a></h6>
   </footer>
 
   </body>
