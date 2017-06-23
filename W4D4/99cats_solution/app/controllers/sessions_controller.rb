@@ -2,10 +2,7 @@ class SessionsController < ApplicationController
   before_action :require_no_user!, only: [:create, :new]
 
   def create
-    user = User.find_by_credentials(
-      params[:user][:username],
-      params[:user][:password]
-    )
+    user = User.find_by_credentials(user_params)
 
     if user.nil?
       flash.now[:errors] = ["Incorrect username and/or password"]
@@ -24,4 +21,10 @@ class SessionsController < ApplicationController
   def new
     render :new
   end
+end
+
+private
+
+def user_params
+  params.require[:user].permit[:username, :password]
 end
