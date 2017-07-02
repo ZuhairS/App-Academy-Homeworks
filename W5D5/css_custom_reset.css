@@ -1,0 +1,12 @@
+html, body, header, nav, ul, ol, li, aside, h1, h2, h5, h6, section, figure, figcaption, a, form, label, footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  color: inherit;
+
+  background: transparent;
+}

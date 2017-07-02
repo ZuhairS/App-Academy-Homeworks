@@ -1,6 +1,6 @@
 window.onload = function() {
   (function reviewFormListener() {
-    form = document.getElementById("review-form");
+    var form = document.getElementById("review-form");
     form.addEventListener("submit", placeReview);
   })();
 };
