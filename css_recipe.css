@@ -1,16 +1,32 @@
 body {
   font-family: Arial, sans-serif;
   background-color: blanchedalmond;
+  width: 60%;
+  margin: 0 auto;
 }
+
+/*section {
+  display: inline-block;
+  width: 700px;
+}
+
+aside {
+  display: inline-block;
+  margin-right: 15px;
+  width: 180px;
+  vertical-align: top;
+}*/
 
 h1 {font-size: 38px;}
 
 h2 {font-size: 32px;}
 
-.ingredients-list {list-style: square inside;}
+.ingredients-list {
+  list-style: square inside;
+}
 
 ol {
-    list-style: circle inside;
+    list-style: lower-greek inside;
 }
 
 header > img {
@@ -55,4 +71,37 @@ ol li:nth-of-type(2n) {
 
 h2 + .user_review {
     border-top: 1px solid black;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 20px;
+  display: block;
+}
+
+nav {
+  float: right;
+}
+
+header img {
+  float: left;
+}
+
+.ingredients-list li, ol li {
+  margin: 15px 0;
+}
+
+input[type="text"], select {
+  display: block;
+}
+
+select {
+  width: 175px;
+}
+
+text, textarea {
+  width: 350px;
 }
